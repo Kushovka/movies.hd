@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D & W - MHD</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="shortcut icon" href="./Images/fav-icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Monoton:regular"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/3af64f3dec.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="progress">
+      <span id="progress-value"></span>
+    </div>
+
+    <nav class="navigation">
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+
+      <a href="index.html" class="logo"> Movies<span>.hd</span> </a>
+
+      <ul class="menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./Genre.html">Genre</a></li>
+        <li><a href="./TVseries.html">TV series</a></li>
+        <li><a href="./Movies.html">Movies</a></li>
+        <li><a href="./Contact.html">Contact</a></li>
+      </ul>
+
+      <section class="signIn">
+        <a href="#" class="SI-btn open-popup"
+          ><i class="fa-solid fa-circle-user"></i> Sign in</a
+        >
+      </section>
+
+      <div class="popup-bg">
+        <div class="popup">
+          <i class="fa-solid fa-xmark"></i>
+          <strong>Sign in</strong>
+          <p>Email or mobile phone number</p>
+          <input class="email" type="email" />
+          <p>Password</p>
+          <div class="password">
+            <input type="password" id="password-input" name="password" />
+            <a href="#" class="password-control"></a>
+          </div>
+          <a href="" class="popup-btn">Sign in</a>
+        </div>
+      </div>
+
+      <form action="" class="search-box">
+        <input
+          type="text"
+          name="search"
+          placeholder="Search Movie"
+          class="search-input"
+          required
+        />
+
+        <button type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </nav>
+
+    <section class="movie-banner">
+      <div class="m-banner-img">
+        <img src="./Movie-Data/deadpool & wolverine/poster.jpg" alt="" />
+      </div>
+
+      <div class="banner-container">
+        <div class="title-container">
+          <div class="title-top">
+            <div class="movie-title">
+              <h1>Deadpool & Wolverine</h1>
+            </div>
+
+            <div class="more-about-movie">
+              <span class="quality">Full HD</span>
+
+              <div class="rating">
+                7.6 <img src="Images/IMDb-icon.png" alt="imdb" />
+              </div>
+
+              <span>July 22, 2024</span>
+
+              <span>128min</span>
+            </div>
+
+            <div class="language">
+              <span>English</span>
+            </div>
+          </div>
+
+          <div class="title-bottom">
+            <div class="category">
+              <strong>Category :</strong><br />
+              <a href="#">Action movie</a>, <a href="#">comedy</a>
+            </div>
+
+            <a
+              href="https://www.youtube.com/watch?v=73_1biulkYk"
+              class="watch-btn"
+              >Watch Trailer</a
+            >
+          </div>
+        </div>
+
+        <div class="play-btn-container">
+          <div class="play-btn">
+            <a href="javascript:void">
+              <i class="fas fa-play"></i>
+            </a>
+          </div>
+        </div>
+
+        <div id="play" class="play">
+          <a href="javascript:void" class="close-movie">
+            <i class="fas fa-times"></i>
+          </a>
+
+          <div class="play-movie">
+            <video id="m-video" controls>
+              <source
+                src="./Movie-Data/dune-part-two/dune-part-two-1080.mkv"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="movie-details">
+      <strong>Deadpool & Wolverine</strong>
+      <p>
+        Wade Wilson enters the organization “Management of Temporary Changes”,
+        which forces him to return to his alter ego Deadpool and change the
+        story with the help of Wolverine.
+      </p>
+    </section>
+
+    <section class="screenshots">
+      <strong>ScreenShots</strong>
+      <div class="screen-s-container">
+        <img src="./Movie-Data/deadpool & wolverine/screenshot-1.jpg" alt="" />
+        <img src="./Movie-Data/deadpool & wolverine/screenshot-2.jpg" alt="" />
+        <img src="./Movie-Data/deadpool & wolverine/screenshot-3.jpg" alt="" />
+        <img src="./Movie-Data/deadpool & wolverine/screenshot-4.jpg" alt="" />
+      </div>
+    </section>
+
+    <div class="movie-rating">
+      <strong>Rate this movie !</strong>
+      <div class="rating-star">
+        <input type="radio" id="star-1" name="star-radio" value="star-1" />
+        <label for="star-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              pathLength="360"
+              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+            ></path>
+          </svg>
+        </label>
+        <input type="radio" id="star-2" name="star-radio" value="star-1" />
+        <label for="star-2">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              pathLength="360"
+              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+            ></path>
+          </svg>
+        </label>
+        <input type="radio" id="star-3" name="star-radio" value="star-1" />
+        <label for="star-3">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              pathLength="360"
+              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+            ></path>
+          </svg>
+        </label>
+        <input type="radio" id="star-4" name="star-radio" value="star-1" />
+        <label for="star-4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              pathLength="360"
+              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+            ></path>
+          </svg>
+        </label>
+        <input type="radio" id="star-5" name="star-radio" value="star-1" />
+        <label for="star-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              pathLength="360"
+              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+            ></path>
+          </svg>
+        </label>
+        <input type="radio" id="star-6" name="star-radio" value="star-1" />
+        <label for="star-6">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              pathLength="360"
+              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+            ></path>
+          </svg>
+        </label>
+        <input type="radio" id="star-7" name="star-radio" value="star-1" />
+        <label for="star-7">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              pathLength="360"
+              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+            ></path>
+          </svg>
+        </label>
+        <input type="radio" id="star-8" name="star-radio" value="star-1" />
+        <label for="star-8">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              pathLength="360"
+              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+            ></path>
+          </svg>
+        </label>
+        <input type="radio" id="star-9" name="star-radio" value="star-1" />
+        <label for="star-9">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              pathLength="360"
+              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+            ></path>
+          </svg>
+        </label>
+        <input type="radio" id="star-10" name="star-radio" value="star-1" />
+        <label for="star-10">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              pathLength="360"
+              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+            ></path>
+          </svg>
+        </label>
+      </div>
+
+      <div class="rate">
+        <a href="#" class="rate-btn">Rate</a>
+      </div>
+    </div>
+
+    <section class="download-movie">
+      <div class="download-container">
+        <div class="download-box">
+          <span><i class="fas fa-server"></i> Server 1</span>
+          <span>English</span>
+          <span>480p</span>
+          <a href="./Movie-Data/dune-part-two/dune-part-two-480.mp4" download
+            >Download</a
+          >
+        </div>
+
+        <div class="download-box">
+          <span><i class="fas fa-server"></i> Server 2</span>
+          <span>English</span>
+          <span>720p</span>
+          <a href="./Movie-Data/dune-part-two/dune-part-two-720.mkv"
+            >Download</a
+          >
+        </div>
+
+        <div class="download-box">
+          <span><i class="fas fa-server"></i> Server 3</span>
+          <span>English</span>
+          <span>1080p</span>
+          <a href="./Movie-Data/dune-part-two/dune-part-two-1080.mkv"
+            >Download</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <a href="index.html" class="logo"> Movies<span>hd</span> </a>
+
+      <span class="copyright"> Copyright 2021 - GoingToInternet </span>
+    </footer>
+
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/main.js"></script>
+
+    <script>
+      let scrollPrecentage = () => {
+        let scrollProgress = document.getElementById("progress");
+        let progressValue = document.getElementById("progress-value");
+        let pos = document.documentElement.scrollTop;
+        let calcHeight =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        let scrollValue = Math.round((pos * 100) / calcHeight);
+        scrollProgress.style.background = `conic-gradient(#e70634 ${scrollValue}%, #2b2f38 ${scrollValue}%)`;
+      };
+      window.onscroll = scrollPrecentage;
+      window.onload = scrollPrecentage;
+
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 20) {
+          $(".navigation").addClass("fix-icon");
+        } else {
+          $(".navigation").removeClass("fix-icon");
+        }
+      });
+
+      $(document).on("click", ".play-btn a", function () {
+        $(".play").addClass("active-popup");
+      });
+
+      $(document).on("click", ".close-movie", function () {
+        $(".play").removeClass("active-popup");
+      });
+
+      $(".play-btn a").click(function () {
+        $("#m-video")[0].play();
+      });
+
+      $(".close-movie").click(function () {
+        $("#m-video")[0].pause();
+      });
+    </script>
+  </body>
+</html>

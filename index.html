@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MHD - Full HD Movies</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="shortcut icon" href="./Images/fav-icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Monoton:regular"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3af64f3dec.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href=".//css/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <div id="progress">
+      <span id="progress-value"></span>
+    </div>
+
+    <nav class="navigation">
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+
+      <a href="index.html" class="logo"> Movies<span>.hd</span> </a>
+
+      <ul class="menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./Genre.html">Genre</a></li>
+        <li><a href="./TVseries.html">TV series</a></li>
+        <li><a href="./Movies.html">Movies</a></li>
+        <li><a href="./Contact.html">Contact</a></li>
+      </ul>
+
+      <section class="signIn">
+        <a href="#" class="SI-btn open-popup"
+          ><i class="fa-solid fa-circle-user"></i> Sign in</a
+        >
+      </section>
+
+      <div class="popup-bg">
+        <div class="popup">
+          <i class="fa-solid fa-xmark"></i>
+          <strong>Sign in</strong>
+          <p>Email or mobile phone number</p>
+          <input class="email" type="email" />
+          <p>Password</p>
+          <div class="password">
+            <input type="password" id="password-input" name="password" />
+            <a href="#" class="password-control"></a>
+          </div>
+          <a href="" class="popup-btn">Sign in</a>
+        </div>
+      </div>
+
+      <form action="" class="search-box">
+        <input
+          type="text"
+          name="search"
+          placeholder="Search Movie"
+          class="search-input"
+          required
+        />
+
+        <button type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </nav>
+
+    <section id="main-slider">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- 1 ---------------------------------------------------------------->
+          <div class="swiper-slide">
+            <div class="main-slider-box">
+              <a href="./movie-1.html" class="main-slider-overlay">
+                <i class="fa fa-play"></i>
+              </a>
+              <div class="main-slider-img">
+                <img src="./Images/p-1.jpg" alt="poster" />
+              </div>
+              <div class="main-slider-text">
+                <span class="quality">Full HD</span>
+                <div class="bottom-text">
+                  <div class="movie-name">
+                    <span>2024</span>
+                    <strong>Deadpool & Wolverine </strong>
+                  </div>
+                  <div class="category-rating">
+                    <div class="category">
+                      <a href="#">Action movie</a>,
+                      <a href="#">comedy</a>
+                    </div>
+
+                    <div class="rating rating-1">
+                      7.6 <img src="./Images/IMDb-icon.png" alt="imbd" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2 ---------------------------------------------------------------->
+          <div class="swiper-slide">
+            <div class="main-slider-box">
+              <a href="movie-2.html" class="main-slider-overlay">
+                <i class="fa fa-play"></i>
+              </a>
+              <div class="main-slider-img">
+                <img src="./Images/p-2.jpg" alt="poster" />
+              </div>
+              <div class="main-slider-text">
+                <span class="quality">Full HD</span>
+                <div class="bottom-text">
+                  <div class="movie-name">
+                    <span>2024</span>
+                    <strong>Dune: Part Two</strong>
+                  </div>
+                  <div class="category-rating">
+                    <div class="category">
+                      <a href="#">Epic movie</a>,<a href="#">science fiction</a>
+                    </div>
+
+                    <div class="rating rating-2">
+                      8.5 <img src="./Images/IMDb-icon.png" alt="imbd" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 3 ---------------------------------------------------------------->
+          <div class="swiper-slide">
+            <div class="main-slider-box">
+              <a href="./movie-3.html" class="main-slider-overlay">
+                <i class="fa fa-play"></i>
+              </a>
+              <div class="main-slider-img">
+                <img src="./Images/p-3.jpg" alt="poster" />
+              </div>
+              <div class="main-slider-text">
+                <span class="quality">Full HD</span>
+                <div class="bottom-text">
+                  <div class="movie-name">
+                    <span>2023</span>
+                    <strong>Oppenheimer</strong>
+                  </div>
+
+                  <div class="category-rating">
+                    <div class="category">
+                      <a href="#">Biography</a>,<a href="#">thriller</a>
+                    </div>
+
+                    <div class="rating rating-3">
+                      8.3 <img src="./Images/IMDb-icon.png" alt="imbd" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 4 ---------------------------------------------------------------->
+          <div class="swiper-slide">
+            <div class="main-slider-box">
+              <a href="./movie-4.html" class="main-slider-overlay">
+                <i class="fa fa-play"></i>
+              </a>
+              <div class="main-slider-img">
+                <img src="./Images/p-4.webp" alt="poster" />
+              </div>
+              <div class="main-slider-text">
+                <span class="quality">Full HD</span>
+                <div class="bottom-text">
+                  <div class="movie-name">
+                    <span>2024</span>
+                    <strong>Venom: The Last Dance</strong>
+                  </div>
+
+                  <div class="category-rating">
+                    <div class="category">
+                      <a href="#">Action movie</a>,<a href="#">fantasy</a>
+                    </div>
+
+                    <div class="rating rating-4">
+                      6.0 <img src="./Images/IMDb-icon.png" alt="imbd" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 5 ---------------------------------------------------------------->
+          <div class="swiper-slide">
+            <div class="main-slider-box">
+              <a href="./movie-5.html" class="main-slider-overlay">
+                <i class="fa fa-play"></i>
+              </a>
+              <div class="main-slider-img">
+                <img src="./Images/p-5.webp" alt="poster" />
+              </div>
+              <div class="main-slider-text">
+                <span class="quality">Full HD</span>
+                <div class="bottom-text">
+                  <div class="movie-name">
+                    <span>2024</span>
+                    <strong>Road House</strong>
+                  </div>
+
+                  <div class="category-rating">
+                    <div class="category">
+                      <a href="#">Action movie</a>
+                    </div>
+
+                    <div class="rating rating-5">
+                      6.2 <img src="./Images/IMDb-icon.png" alt="imbd" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 6 ---------------------------------------------------------------->
+          <div class="swiper-slide">
+            <div class="main-slider-box">
+              <a href="./movie-6.html" class="main-slider-overlay">
+                <i class="fa fa-play"></i>
+              </a>
+              <div class="main-slider-img">
+                <img src="./Images/p-6.webp" alt="poster" />
+              </div>
+              <div class="main-slider-text">
+                <span class="quality">Full HD</span>
+                <div class="bottom-text">
+                  <div class="movie-name">
+                    <span>2024</span>
+                    <strong>The Substance</strong>
+                  </div>
+
+                  <div class="category-rating">
+                    <div class="category">
+                      <a href="#">Horror</a>,<a href="#">satire</a>
+                    </div>
+
+                    <div class="rating rating-6">
+                      7.3 <img src="./Images/IMDb-icon.png" alt="imbd" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="slider-btns">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <section id="latest">
+      <div class="latest-heading">
+        <h1>Latest Movies</h1>
+      </div>
+
+      <div class="post-container">
+        <!-- post-box-1 -------------------------------------------------->
+        <div class="post-box">
+          <div class="post-img">
+            <img src="./Images/post-1.jpg" alt="" />
+          </div>
+          <div class="main-slider-text">
+            <span class="quality">Full HD</span>
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2024</span>
+                <a href="#">Alien: Romulus</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Horror</a>,<a href="#">fantasy</a>
+                </div>
+
+                <div class="rating rating-post-1">
+                  7.1 <img src="./Images/IMDb-icon.png" alt="imbd" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- post-box-2 -------------------------------------------------->
+        <div class="post-box">
+          <div class="post-img">
+            <img src="./Images/post-2.jpg" alt="" />
+          </div>
+          <div class="main-slider-text">
+            <span class="quality">Full HD</span>
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2024</span>
+                <a href="#">Terrifier 3</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Horror</a>
+                </div>
+
+                <div class="rating rating-post-2">
+                  6.3 <img src="./Images/IMDb-icon.png" alt="imbd" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- post-box-3 -------------------------------------------------->
+        <div class="post-box">
+          <div class="post-img">
+            <img src="./Images/post-3.jpg" alt="" />
+          </div>
+          <div class="main-slider-text">
+            <span class="quality">Full HD</span>
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2024</span>
+                <a href="#">Joker: Folie à Deux</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Drama</a>,<a href="#">thriller</a>,<a href="#"
+                    >musical</a
+                  >
+                </div>
+
+                <div class="rating rating-post-3">
+                  5.2 <img src="./Images/IMDb-icon.png" alt="imbd" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- post-box-4 -------------------------------------------------->
+        <div class="post-box">
+          <div class="post-img">
+            <img src="./Images/post-4.jpg" alt="" />
+          </div>
+          <div class="main-slider-text">
+            <span class="quality">Full HD</span>
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2024</span>
+                <a href="#">El hoyo 2</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Horror</a>,<a href="#">Thriller</a>
+                </div>
+
+                <div class="rating rating-post-4">
+                  4.9 <img src="./Images/IMDb-icon.png" alt="imbd" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- post-box-5 -------------------------------------------------->
+        <div class="post-box">
+          <div class="post-img">
+            <img src="./Images/post-5.jpg" alt="" />
+          </div>
+          <div class="main-slider-text">
+            <span class="quality">Full HD</span>
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2024</span>
+                <a href="#">The Beekeeper</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Action movie</a>,<a href="#">Thriller</a>
+                </div>
+
+                <div class="rating rating-post-5">
+                  6.3 <img src="./Images/IMDb-icon.png" alt="imbd" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- post-box-6 -------------------------------------------------->
+        <div class="post-box">
+          <div class="post-img">
+            <img src="./Images/post-6.webp" alt="" />
+          </div>
+          <div class="main-slider-text">
+            <span class="quality">Full HD</span>
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2024</span>
+                <a href="#">Le Comte de Monte-Cristo</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Melodrama </a>,<a href="#">Thriller</a>
+                </div>
+
+                <div class="rating rating-post-6">
+                  7.6 <img src="./Images/IMDb-icon.png" alt="imbd" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- post-box-7 -------------------------------------------------->
+        <div class="post-box">
+          <div class="post-img">
+            <img src="./Images/post-7.jpg" alt="" />
+          </div>
+          <div class="main-slider-text">
+            <span class="quality">Full HD</span>
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2024</span>
+                <a href="#">Mufasa: The Lion King</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Drama</a>,<a href="#">fantasy</a>
+                </div>
+
+                <div class="rating rating-post-7">
+                  6.7 <img src="./Images/IMDb-icon.png" alt="imbd" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- post-box-8 -------------------------------------------------->
+        <div class="post-box">
+          <div class="post-img">
+            <img src="./Images/post-8.jpg" alt="" />
+          </div>
+          <div class="main-slider-text">
+            <span class="quality">Full HD</span>
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2024</span>
+                <a href="#">Moana 2</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Fantasy</a>,<a href="#">cartoon</a>
+                </div>
+
+                <div class="rating rating-post-8">
+                  6.8 <img src="./Images/IMDb-icon.png" alt="imbd" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- post-box-9 -------------------------------------------------->
+        <div class="post-box">
+          <div class="post-img">
+            <img src="./Images/post-9.jpg" alt="" />
+          </div>
+          <div class="main-slider-text">
+            <span class="quality">Full HD</span>
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2024</span>
+                <a href="#">Red One</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Detective</a>,<a href="#">action movie</a>
+                </div>
+
+                <div class="rating rating-post-9">
+                  6.3 <img src="./Images/IMDb-icon.png" alt="imbd" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- post-box-10 ------------------------------------------------->
+        <div class="post-box">
+          <div class="post-img">
+            <img src="./Images/post-10.jpg" alt="" />
+          </div>
+          <div class="main-slider-text">
+            <span class="quality">Full HD</span>
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2024</span>
+                <a href="#">Anora</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Drama</a>,<a href="#">melodrama</a>
+                </div>
+
+                <div class="rating rating-post-10">
+                  7.7 <img src="./Images/IMDb-icon.png" alt="imbd" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- post-box-11 ------------------------------------------------->
+        <div class="post-box">
+          <div class="post-img">
+            <img src="./Images/post-11.png" alt="" />
+          </div>
+          <div class="main-slider-text">
+            <span class="quality">Full HD</span>
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2024</span>
+                <a href="#">Furiosa: A Mad Max Saga</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Fantasy</a>,<a href="#">action movie</a>
+                </div>
+
+                <div class="rating rating-post-11">
+                  7.5 <img src="./Images/IMDb-icon.png" alt="imbd" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- post-box-12 ------------------------------------------------->
+        <div class="post-box">
+          <div class="post-img">
+            <img src="./Images/post-12.jpg" alt="" />
+          </div>
+          <div class="main-slider-text">
+            <span class="quality">Full HD</span>
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2024</span>
+                <a href="#">The Fall Guy</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Action movie</a>,<a href="#">comedy</a>
+                </div>
+
+                <div class="rating rating-post-12">
+                  6.8 <img src="./Images/IMDb-icon.png" alt="imbd" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-number">
+        <a href="#" class="page-active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        ....
+        <a href="#">100</a>
+      </div>
+    </section>
+
+    <footer>
+      <a href="index.html" class="logo"> Movies<span>hd</span> </a>
+
+      <span class="copyright"> Copyright 2021 - GoingToInternet </span>
+    </footer>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/main.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      let scrollPrecentage = () => {
+        let scrollProgress = document.getElementById("progress");
+        let progressValue = document.getElementById("progress-value");
+        let pos = document.documentElement.scrollTop;
+        let calcHeight =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        let scrollValue = Math.round((pos * 100) / calcHeight);
+        scrollProgress.style.background = `conic-gradient(#e70634 ${scrollValue}%, #2b2f38 ${scrollValue}%)`;
+      };
+      window.onscroll = scrollPrecentage;
+      window.onload = scrollPrecentage;
+
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
+
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 20) {
+          $(".navigation").addClass("fix-icon");
+        } else {
+          $(".navigation").removeClass("fix-icon");
+        }
+      });
+    </script>
+  </body>
+</html>
